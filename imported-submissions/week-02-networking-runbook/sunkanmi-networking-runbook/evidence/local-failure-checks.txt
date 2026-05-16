@@ -1,0 +1,18 @@
+### WRONG PORT FAILURE (8999)
+
+### SERVICE STOPPED FAILURE
+HTTP/1.0 200 OK
+Server: SimpleHTTP/0.6 Python/3.12.3
+Date: Tue, 12 May 2026 12:55:47 GMT
+Content-type: text/html; charset=utf-8
+Content-Length: 471
+
+
+### SERVICE RECOVERY
+LISTEN 0      5            0.0.0.0:8018      0.0.0.0:*    users:(("python3",pid=1292558,fd=3))
+HTTP/1.0 200 OK
+Server: SimpleHTTP/0.6 Python/3.12.3
+Date: Tue, 12 May 2026 12:55:47 GMT
+Content-type: text/html; charset=utf-8
+Content-Length: 471
+

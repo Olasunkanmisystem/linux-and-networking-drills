@@ -1,0 +1,58 @@
+===== SERVICES & SYSTEM INSPECTION =====
+
+1. SSH SERVICE STATUS:
+● ssh.service - OpenBSD Secure Shell server
+     Loaded: loaded (/usr/lib/systemd/system/ssh.service; enabled; preset: enabled)
+    Drop-In: /usr/lib/systemd/system/ssh.service.d
+             └─ec2-instance-connect.conf
+     Active: active (running) since Thu 2026-04-16 21:44:51 UTC; 2 days ago
+TriggeredBy: ● ssh.socket
+       Docs: man:sshd(8)
+             man:sshd_config(5)
+   Main PID: 56146 (sshd)
+      Tasks: 2 (limit: 1004)
+
+2. ADDITIONAL SERVICE (CRON):
+● cron.service - Regular background program processing daemon
+     Loaded: loaded (/usr/lib/systemd/system/cron.service; enabled; preset: enabled)
+     Active: active (running) since Sun 2026-04-12 01:31:49 UTC; 1 week 0 days ago
+       Docs: man:cron(8)
+   Main PID: 583 (cron)
+      Tasks: 1 (limit: 1004)
+     Memory: 3.2M (peak: 9.1M)
+        CPU: 2min 23.323s
+     CGroup: /system.slice/cron.service
+             └─583 /usr/sbin/cron -f -P
+
+3. RUNNING PROCESSES (TOP SAMPLE):
+    PID    PPID CMD                         %MEM %CPU
+  23408       1 /usr/lib/systemd/systemd-jo  4.8  0.0
+  40916       1 /usr/libexec/fwupd/fwupd     3.1  0.0
+  18125       1 /sbin/multipathd -d -s       2.9  0.0
+  23923       1 /snap/snapd/current/usr/lib  2.8  0.0
+    591       1 /usr/bin/python3 /usr/bin/n  2.1  0.0
+   1413    1378 /snap/amazon-ssm-agent/1300  2.1  0.0
+    728       1 /usr/bin/python3 /usr/share  2.1  0.0
+ 105903       1 /usr/bin/python3 /opt/demo-  2.0  0.0
+   1378       1 /snap/amazon-ssm-agent/1300  1.4  0.0
+
+4. MEMORY USAGE:
+               total        used        free      shared  buff/cache   available
+Mem:           911Mi       476Mi        79Mi       2.9Mi       539Mi       434Mi
+Swap:             0B          0B          0B
+
+5. DISK USAGE:
+Filesystem       Size  Used Avail Use% Mounted on
+/dev/root        6.8G  3.2G  3.6G  47% /
+tmpfs            456M     0  456M   0% /dev/shm
+tmpfs            183M  1.1M  182M   1% /run
+tmpfs            5.0M     0  5.0M   0% /run/lock
+efivarfs         128K  3.6K  120K   3% /sys/firmware/efi/efivars
+/dev/nvme0n1p16  881M  162M  657M  20% /boot
+/dev/nvme0n1p15  105M  6.2M   99M   6% /boot/efi
+/dev/nvme1n1p1   6.8G  2.6G  4.2G  39% /mnt/old
+tmpfs             92M   12K   92M   1% /run/user/1011
+tmpfs             92M   12K   92M   1% /run/user/1007
+tmpfs             92M   12K   92M   1% /run/user/1018
+tmpfs             92M   12K   92M   1% /run/user/1000
+tmpfs             92M   12K   92M   1% /run/user/1009

@@ -1,0 +1,16 @@
+{
+echo "### HEALTHY HTTPS - example.com"
+curl -I https://example.com
+
+echo
+echo "### PLAIN HTTP - neverssl"
+curl -I http://neverssl.com
+
+echo
+echo "### REDIRECT - httpbin"
+curl -I https://httpbin.org/redirect/1
+
+echo
+echo "### FAILURE - invalid domain"
+curl -I https://does-not-exist.invalid
+} 
