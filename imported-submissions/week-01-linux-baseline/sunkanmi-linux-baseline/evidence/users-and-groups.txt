@@ -1,0 +1,41 @@
+===== ACCESS CONTEXT =====
+
+Assigned Username:
+sunkanmi
+
+User ID Information:
+uid=1007(sunkanmi) gid=1007(sunkanmi) groups=1007(sunkanmi),27(sudo)
+
+Group Membership:
+sunkanmi sudo
+
+Home Directory:
+/home/sunkanmi
+
+SSH Service Status:
+● ssh.service - OpenBSD Secure Shell server
+     Loaded: loaded (/usr/lib/systemd/system/ssh.service; enabled; preset: enabled)
+    Drop-In: /usr/lib/systemd/system/ssh.service.d
+             └─ec2-instance-connect.conf
+     Active: active (running) since Thu 2026-04-16 21:44:51 UTC; 2 days ago
+
+SSH Process Check:
+root       44966       1  0 Apr16 ?        00:00:00 sshd: /usr/sbin/sshd -D -o AuthorizedKeysCommand /usr/share/ec2-instance-connect/eic_run_authorized_keys %u %f -o AuthorizedKeysCommandUser ec2-instance-connect [listener] 0 of 10-100 startups
+root       56146       1  0 Apr16 ?        00:00:00 sshd: /usr/sbin/sshd -D -o AuthorizedKeysCommand /usr/share/ec2-instance-connect/eic_run_authorized_keys %u %f -o AuthorizedKeysCommandUser ec2-instance-connect [listener] 0 of 10-100 startups
+root      110118   44966  0 09:36 ?        00:00:00 sshd: gilbert [priv]
+gilbert   110253  110118  0 09:36 ?        00:00:01 sshd: gilbert@pts/0
+root      112255   56146  0 11:49 ?        00:00:00 sshd: sunkanmi [priv]
+sunkanmi  112327  112255  0 11:49 ?        00:00:00 sshd: sunkanmi@pts/3
+root      113104   56146  0 12:50 ?        00:00:00 sshd: hannah [priv]
+hannah    113239  113104  0 12:50 ?        00:00:00 sshd: hannah@pts/1
+root      113456   56146  0 13:05 ?        00:00:00 sshd: hannah [priv]
+hannah    113513  113456  0 13:05 ?        00:00:00 sshd: hannah@pts/2
+root      113700   44966  0 13:20 ?        00:00:00 sshd: ubuntu [priv]
+ubuntu    113771  113700  0 13:20 ?        00:00:00 sshd: ubuntu@pts/4
+root      113776   44966  0 13:22 ?        00:00:00 sshd: hannah [priv]
+hannah    113833  113776  0 13:22 ?        00:00:00 sshd: hannah@pts/5
+root      113881   56146  0 13:25 ?        00:00:00 sshd: christian [priv]
+christi+  113953  113881  0 13:25 ?        00:00:00 sshd: christian@pts/6
+
+Access Summary:
+Working as a standard Linux

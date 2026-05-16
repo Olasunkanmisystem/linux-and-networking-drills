@@ -1,0 +1,15 @@
+===== PORT SELECTION =====
+
+/home listing:
+(PASTE OUTPUT OF: ls -al /home HERE)
+
+My user:
+sunkanmi
+
+Assigned port:
+8018
+
+Reason:
+I determined my position in /home and mapped it sequentially to port range 8000–8020.
+
+==========================

@@ -1,0 +1,29 @@
+# Script Explanation – health-check.sh
+
+#!/bin/bash
+Runs the script using Bash.
+
+set -euo pipefail
+- e: exit on error
+- u: error on undefined variables
+- pipefail: fail if any pipe command fails
+
+PORT collection
+- Reads assigned port from environment or config
+- Ensures script uses correct service port
+
+Port validation
+- Ensures port is within allowed range (8000–8020)
+- Prevents accidental misconfiguration
+
+HTTP response variable
+- Stores curl output from local service
+- Used to verify service health
+
+printf '%b'
+- Prints formatted output safely (interprets escape characters)
+
+nc -l "${PORT}"
+- Opens a listener on assigned port
+- Waits for a single request
+- Closes after serving request to avoid blocking

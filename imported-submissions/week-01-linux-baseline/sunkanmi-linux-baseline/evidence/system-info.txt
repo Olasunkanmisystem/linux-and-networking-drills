@@ -1,0 +1,21 @@
+===== HOST IDENTIFICATION =====
+Hostname:
+ip-172-31-18-193
+
+User:
+sunkanmi
+
+Home Directory:
+/home/sunkanmi
+
+Ubuntu Version:
+Distributor ID:	Ubuntu
+Description:	Ubuntu 24.04.4 LTS
+Release:	24.04
+Codename:	noble
+
+Kernel / System:
+Linux ip-172-31-18-193 6.17.0-1007-aws #7~24.04.1-Ubuntu SMP Thu Jan 22 21:04:49 UTC 2026 x86_64 x86_64 x86_64 GNU/Linux
+
+Date & Time:
+Sun Apr 19 13:10:32 UTC 2026

@@ -1,0 +1,1 @@
+*/5 * * * * /bin/bash /week01-submissions/sunkanmi-linux-baseline/scripts/health-check.sh >> /week01-submissions/sunkanmi-linux-baseline/evidence/health-check-output.txt 2>&1

@@ -1,0 +1,22 @@
+### Port Listening Check
+LISTEN 0      5            0.0.0.0:8018      0.0.0.0:*    users:(("python3",pid=1291785,fd=3))
+
+### HTTP Header Check
+HTTP/1.0 200 OK
+Server: SimpleHTTP/0.6 Python/3.12.3
+Date: Tue, 12 May 2026 12:45:32 GMT
+Content-type: text/html; charset=utf-8
+Content-Length: 471
+
+
+### HTTP Body Check
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Directory listing for /</title>
+</head>
+<body>
+<h1>Directory listing for /</h1>
+<hr>
+<ul>

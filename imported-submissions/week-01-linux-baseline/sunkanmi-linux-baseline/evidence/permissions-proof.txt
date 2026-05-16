@@ -1,0 +1,28 @@
+===== PERMISSIONS PROOF =====
+
+Working Area Structure:
+/home/sunkanmi/linux-work:
+logs
+notes
+scripts
+
+/home/sunkanmi/linux-work/logs:
+
+/home/sunkanmi/linux-work/notes:
+private.txt
+
+/home/sunkanmi/linux-work/scripts:
+check.sh
+
+Script Permissions:
+-rwxr-x--- 1 sunkanmi sunkanmi 43 Apr 19 13:49 /home/sunkanmi/linux-work/scripts/check.sh
+
+Restricted File:
+-rw------- 1 sunkanmi sunkanmi 22 Apr 19 13:53 /home/sunkanmi/linux-work/notes/private.txt
+
+Directory Permissions:
+drwx------ 2 sunkanmi sunkanmi 4096 Apr 19 13:53 /home/sunkanmi/linux-work/notes
+
+User Context:
+sunkanmi
+uid=1007(sunkanmi) gid=1007(sunkanmi) groups=1007(sunkanmi),27(sudo)
