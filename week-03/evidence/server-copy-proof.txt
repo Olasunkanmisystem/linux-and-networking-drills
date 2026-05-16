@@ -1,0 +1,18 @@
+SERVER COPY PROOF – Week 1 and Week 2 Import
+
+Server source paths:
+- /week01-submissions/sunkanmi-linux-baseline
+- /week02-submissions/sunkanmi-networking-runbook
+
+Local repository paths:
+- imported-submissions/week-01-linux-baseline
+- imported-submissions/week-02-networking-runbook
+
+Verification:
+- Week 1 folder contains: evidence/, notes/, scripts/
+- Week 2 folder contains: evidence/, notes/, scripts/
+
+Summary:
+Both folders were copied directly from the live server using SCP over SSH.
+No manual recreation or modification was performed.
+This confirms real submission import from server to Git repository.
