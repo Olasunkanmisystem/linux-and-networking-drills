@@ -1,0 +1,10 @@
+GitHub Username: Olasunkanmisystem
+
+Repository Name:
+linux-and-networking-drills
+
+Access Check:
+Successfully authenticated to GitHub using SSH.
+
+Local Git Repository:
+Initialized successfully on local machine.
